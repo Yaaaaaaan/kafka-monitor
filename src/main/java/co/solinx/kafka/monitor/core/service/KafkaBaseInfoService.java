@@ -24,6 +24,7 @@ import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.cache.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 import scala.collection.*;
 import scala.collection.convert.*;
 import scala.collection.mutable.ArraySeq;
@@ -47,6 +48,7 @@ import static org.apache.curator.framework.recipes.cache.TreeCacheEvent.Type.NOD
  * Copyright (c) 2015 by solinx
  * @date 2016/12/12.
  */
+@Service
 public class KafkaBaseInfoService {
 
     private Logger logger = LoggerFactory.getLogger(KafkaBaseInfoService.class);
